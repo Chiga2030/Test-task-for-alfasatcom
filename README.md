@@ -38,3 +38,16 @@ const result = someArray.reduce((acc, item, index) => {
   return acc
 }, {})
 ```
+
+
+### 2.2. Convert object to array
+[link to file](./Hight%20order%20functions/Convert-object-to-array/index.js)
+
+```javascript
+// 2.2.1 Только действительных конечных чисел
+const realFiniteNumberArr = someObject.myFilter(isRealFiniteNumber)
+// 2.2.2 Только натуральных чисел
+const naturalNumberArr = someObject.myFilter(isNaturalNumber)
+// 2.3.3 Только объектов JS POJO (Plain Object)
+const pojoArr = someObject.myFilter(isPOJO)
+```
