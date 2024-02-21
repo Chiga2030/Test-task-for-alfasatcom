@@ -1,9 +1,3 @@
-# Test-task-for-alfasatcom
-
-### 1. Документация и защита кода
-[link to file](./Alphabet%20slice/index.js)
-
-```javascript
 /**
  * Возвращает фрагмент алфавита, последовательности UTF-16, начиная со строчных английских букв.
  * Опционально можно указать символы которые будут пропущены.
@@ -26,4 +20,3 @@ const alphabetSlice = (from = 0, to = 25, exclude = []) => {
   }
   return content.join(' ');
 };
-```
