@@ -27,3 +27,14 @@ const alphabetSlice = (from = 0, to = 25, exclude = []) => {
   return content.join(' ');
 };
 ```
+
+
+### 2.1. Array.prototype.reduce
+[link to file](./Hight%20order%20functions/Array-prototype-reduce/index.js)
+
+```javascript
+const result = someArray.reduce((acc, item, index) => {
+  acc[String.fromCharCode(97 + index)] = item
+  return acc
+}, {})
+```
