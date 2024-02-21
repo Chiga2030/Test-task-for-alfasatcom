@@ -51,3 +51,6 @@ const naturalNumberArr = someObject.myFilter(isNaturalNumber)
 // 2.3.3 Только объектов JS POJO (Plain Object)
 const pojoArr = someObject.myFilter(isPOJO)
 ```
+
+### 3. Demo-приложение
+[Ссылка на репозиторий](https://github.com/Chiga2030/site-info-app)
