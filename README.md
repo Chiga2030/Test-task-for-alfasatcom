@@ -68,3 +68,25 @@ const pojoArr = someObject.myFilter(isPOJO)
   console.log('Выполнение завершено')
 })(query, addressList)
 ```
+
+
+### 5. Работа с DOM
+
+Просто скопировать код и вставить в консоль на любой из вкладок браузера:
+```javascript
+const element = document.createElement("h1")
+element.setAttribute('id', 'my-element')
+element.setAttribute('my-before', 'init value - ')
+element.innerText = 'this is new element'
+
+const style = document.createElement('style');
+style.innerText = '#my-element::before {content:attr(my-before);}';
+
+document.head.appendChild(style);
+document.body.prepend(element)
+
+
+setInterval(() => {
+  element.setAttribute('my-before', `${Date.now()} - `)
+}, 1000)
+```
