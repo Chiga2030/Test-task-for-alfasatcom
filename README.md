@@ -54,3 +54,17 @@ const pojoArr = someObject.myFilter(isPOJO)
 
 ### 3. Demo-приложение
 [Ссылка на репозиторий](https://github.com/Chiga2030/site-info-app)
+
+
+### 4. Async queries
+[link to file](./Async%20queries/index.js)
+
+```javascript
+(async function (query, addressList) {
+  for(let i = 0; i < addressList.length; i++) {
+    await fetch(query + '&url=' + addressList[i]).then(res => res.json()).then(console.log)
+  }
+
+  console.log('Выполнение завершено')
+})(query, addressList)
+```
