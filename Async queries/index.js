@@ -8,7 +8,7 @@ const addressList = ['ya.ru', 'google.com', 'vk.com', 'twitter.com', 'habr.com',
   }
 
   console.log('Выполнение завершено')
-})(query, addressList)
+})(query, addressList);
 
 
 /**
@@ -30,4 +30,4 @@ const addressList = ['ya.ru', 'google.com', 'vk.com', 'twitter.com', 'habr.com',
   })
 
   Promise.allSettled(queryList)
-})(query, addressList)
+})(query, addressList);
